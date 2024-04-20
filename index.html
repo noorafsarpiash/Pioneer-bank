@@ -12,12 +12,25 @@
 
 <body>
   
-    <h1 class="text-center">Welcome to pioneer bank</h1>
-    <p>Lorem ipsum dolor sit.</p>
-    <h1>Karunno</h1>
-
+   <div id="login-area">
+    <h1 class="text-center">Welcome to Pioneer bank</h1>
+    <div class="submit-area">
+        <h4>Login</h4>
+        <input type="text" class="form-control" placeholder="Email">
+        <br>
+        <input type="password" class="form-control" placeholder="Password" >
+        <br>
+        <button id="login" class="btn btn-success">Enter</button>
+    </div>
+   </div> 
 </body>
-
+ <script>
+    const logBtn = document.getElementById("login")
+    logBtn.addEventListener("click", function(){
+        const loginArea = document.getElementById("login-area")
+        loginArea.style.display = "none";
+    })
+ </script>
 </html>
 
 
