@@ -11,3 +11,8 @@ body{
 
 }
 
+#Transaction-area{
+    display: none;
+    text-align: center;
+}
+
